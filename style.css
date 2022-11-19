@@ -2,7 +2,8 @@ body {
     font-family: Open Sans;
     padding: 0;
     margin: 0;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 .logo{
     width: 90px;
@@ -48,13 +49,13 @@ margin-right: 5em;
      
   }
 .container{
-    
+    width: 100%;
     background-image: url('./bg1.jpg');
     background-size: cover;
    
     /* background-color: #888; */
     height: 100vh;
-overflow: hidden;
+overflow-x: hidden;
     
 }
 
