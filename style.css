@@ -51,9 +51,10 @@ margin-right: 5em;
     
     background-image: url('./bg1.jpg');
     background-size: cover;
-    background-repeat: repeat-y;
+   
     /* background-color: #888; */
     height: 100vh;
+overflow: hidden;
     
 }
 
