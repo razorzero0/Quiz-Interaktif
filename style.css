@@ -52,9 +52,8 @@ margin-right: 5em;
     width: 100%;
     background-image: url('./bg1.jpg');
     background-size: cover;
-   
     /* background-color: #888; */
-    height: 100vh;
+    /* height: 100vh; */
 overflow-x: hidden;
     
 }
@@ -157,7 +156,7 @@ ul {
 
 
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1200px) {
     /* #duck,.duck{
         width: 200px;
         right: -65px;
