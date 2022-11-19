@@ -4,6 +4,7 @@ body {
     margin: 0;
     overflow-x: hidden;
     overflow-y: hidden;
+    border: 2px solid red;
 }
 .logo{
     width: 90px;
@@ -175,8 +176,9 @@ ul {
 
     .container{
         height: 100vh;
-        overflow: hidden;
-        
+        overflow-x: hidden;
+        overflow-y: hidden;
+        border: 2px solid black;
     }
 
     #kupu,#kupu2,#panda{
