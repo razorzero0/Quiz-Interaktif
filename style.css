@@ -157,12 +157,12 @@ ul {
 
 
 @media only screen and (max-width: 1200px) {
-    /* #duck,.duck{
+    #duck,.duck{
         width: 200px;
         right: -65px;
         display: none;
         
-    } */
+    }
 
     #main{
         margin-top: 1.5em;
