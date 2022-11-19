@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Dynamic Quiz Project</title>
+		<link type='text/css' rel='stylesheet' href='style.css'/>
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open Sans"/>
+        <style>
+            .duck{
+        position: absolute;
+        width: 300px;
+        right: -100px;
+        bottom: 0;
+       
+    }
+    
+    .duck img{
+    width: 100%;
+    
+    }
+
+    #panda{
+    position:absolute ; bottom: 2.8em;left:-0.6em; width:200px ;
+}
+#kupu{
+    position:absolute ; top: 2em;right:18em; width:150px ;
+}
+#kupu2{
+    position:absolute ; top: 2em;left:18.2em; width:150px ;transform: scaleX(-1);
+}
+    </style>
+    </head>
+	<body>
+       
+        <div class="container">
+            <nav>
+                <div class="logo">
+                <a href="./index.html"><img src="./img/icon1.png"></a>
+                </div>
+                <div>
+                <audio id="track" autoplay >
+                    <source src="./musik1.mp3" type="audio/mpeg" />
+                </audio>
+                
+                <div id="player-container">
+                    <div id="play-pause" class="pause">Play</div>
+                </div>
+            </div>
+            </nav>
+            <div id='main'>
+                <div id='title'>
+                    <h1 style="color:#f4f809;">Quiz Cerdas Cermat</h1>
+                </div>
+              
+                <div id='quiz'></div>
+                <div class="btn-wrap">
+                <div class='button' id='prev'><a href='#'>Prev</a></div>
+                <div class='button' id='next' onclick="click()"><a href='#' >Next</a></div>
+                <div class='button' id='start'> <a href='#'>Mulai Lagi</a></div>
+               </div>
+            </div>    
+            <div class="duck"> 
+                <img src="./duck.gif">
+                </div>
+                <div id="panda"  >
+                    <img src="./img/5UKD.gif" style="width: 100%;" >
+                        </div>
+                        
+                    <div id="kupu"  >
+                    <img src="./img/kupu.GIF" style="width: 100%;" >
+                        </div>
+                    <div id="kupu2"  >
+                    <img src="./img/kupu.GIF" style="width: 100%;" >
+                        </div>
+        </div>
+        <audio id="track1"  >
+            <source src="./alert.mp3" type="audio/mpeg" />
+        </audio>
+        <audio id="track2"  >
+            <source src="./alert1.mp3" type="audio/mpeg" />
+        </audio>
+        <audio id="click"  >
+            <source src="./click.mp3" type="audio/mpeg" />
+        </audio>
+		<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="./musik.js" ></script>
+		<script type='text/javascript' src='jsquiz.js'></script>
+	</body>
+</html>
