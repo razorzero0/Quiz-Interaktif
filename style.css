@@ -159,8 +159,8 @@ ul {
 
 @media only screen and (max-width: 1200px) {
     #duck,.duck{
-        width: 200px;
-        right: -65px;
+        /* width: 200px;
+        right: -65px; */
         display: none;
         
     }
