@@ -27,6 +27,7 @@ width: 10em;
 position: absolute;
 top: 6.2em;
 left: 2.4em;
+opacity: .8;
 }
 nav{
   display: flex;
