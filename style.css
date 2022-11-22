@@ -4,7 +4,7 @@ body {
     margin: 0;
     overflow-x: hidden;
     overflow-y: hidden;
-    border: 2px solid red;
+    
 }
 .logo{
     width: 90px;
@@ -13,6 +13,20 @@ body {
 
 .logo img{
 width: 100%;
+}
+.logo img:hover{
+transform: scale(1.2);
+}
+.logo:hover::after{
+content: "Kembali Home";
+text-align: center;
+background-color: #EEE;
+padding: 0.5em;
+border-radius: 5px;
+width: 10em;
+position: absolute;
+top: 6.2em;
+left: 2.4em;
 }
 nav{
   display: flex;
@@ -33,6 +47,11 @@ margin-right: 5em;
     border-radius: 10px;
     cursor: pointer;
 }
+#player-container:hover{
+    transform: scale(1.2);
+}
+
+
 .play {
    
     width: 100%;
