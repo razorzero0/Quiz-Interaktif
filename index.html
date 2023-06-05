@@ -1,170 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-        <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Tugas Pak Yudho</title>
-		<link type='text/css' rel='stylesheet' href='style.css'/>
-		<link type='text/css' rel='stylesheet' href='p/css/loader.css'/>
-		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open Sans"/>
-	<style>
-        #duck{
-    position: absolute;
-    width: 200px;
-    right: 0;
-    bottom: 0; 
-    display: none;
-
-}
-#duck img{
-width: 100%;
-}
-#panda{
-    display: none; position:absolute ; bottom: 2.8em;left:-0.6em; width:200px ;
-}
-#kupu{
-    display: none; position:absolute ; top: 2em;right:18em; width:150px ;
-}
-#kupu2{
-    display: none;position:absolute ; top: 2em;left:18.2em; width:150px ;transform: scaleX(-1);
-}
-
-@media only screen and (max-width: 1200px) {
-    #duck,.duck{
-        left: 0;
-        opacity: 0;
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas Pak Yudho</title>
+    <link type="text/css" rel="stylesheet" href="style.css" />
+    <link type="text/css" rel="stylesheet" href="p/css/loader.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css?family=Open Sans" />
+    <style>
+      #duck {
+        position: absolute;
+        width: 200px;
+        right: 0;
+        bottom: 0;
         display: none;
-        
-    }
+      }
+      #duck img {
+        width: 100%;
+      }
+      #panda {
+        display: none;
+        position: absolute;
+        bottom: 2.8em;
+        left: -0.6em;
+        width: 200px;
+      }
+      #kupu {
+        display: none;
+        position: absolute;
+        top: 2em;
+        right: 18em;
+        width: 150px;
+      }
+      #kupu2 {
+        display: none;
+        position: absolute;
+        top: 2em;
+        left: 18.2em;
+        width: 150px;
+        transform: scaleX(-1);
+      }
 
-    
-
-    
-  }
+      @media only screen and (max-width: 1200px) {
+        #duck,
+        .duck {
+          left: 0;
+          opacity: 0;
+          display: none;
+        }
+      }
     </style>
-    </head>
-	<body>
-        <div id="loader">
-            <div class="cube-wrapper">
-                <div class="cube-folding">
+  </head>
+  <body>
+    <div id="loader">
+      <div class="cube-wrapper">
+        <!-- <div class="cube-folding">
                   <span class="leaf1"></span>
                   <span class="leaf2"></span>
                   <span class="leaf3"></span>
                   <span class="leaf4"></span>
-                </div>
-                <span class="loading" data-name="Loading">Loading</span>
-              </div>
-            </div>
-        <div class="container">
+                </div> -->
+        <span class="loading" data-name="Loading">Loading</span>
+      </div>
+    </div>
+    <div class="container">
+      <nav>
+        <div class="logo">
+          <a href="./index.html"><img src="./img/icon1.png" /></a>
+        </div>
+        <div>
+          <audio id="track">
+            <source src="./musik1.mp3" type="audio/mpeg" />
+          </audio>
 
-            <nav>
-                <div class="logo">
-                <a href="./index.html"><img src="./img/icon1.png"></a>
-                </div>
-                <div>
-                <audio id="track"  >
-                    <source src="./musik1.mp3" type="audio/mpeg" />
-                </audio>
-                
-                <div id="player-container">
-                    <div id="play-pause" class="play">Play</div>
-                </div>
-            </div>
-            </nav>
-            
-            <div id='main'>
-                <div class="logo-main" >
-                <img src="./img/icon1.png">
-            </div>
-                <div id='title' style="margin-top:-5em ;">
-                    <h1 style="color:#f4f809;">Kuis Cerdas Cermat</h1>
-                    <h3 style="margin-top:-3em ;">Muh. Ainun Yanuarsyam (20562020015)</h3>
-                </div>
-               
-                <a href='./index2.html' >
-                    <div class='button'  style="margin:0 auto ; margin-top: 3em;">
-                       
-                        <img src="./img/mulai.png">
-                </div>
-            </a>
-                
-            </div>  
-                <div id="duck" > 
-                <img src="./duck1.gif">
-                </div> 
-            </div>
-        <div id="panda" class="panda" >
-        <img src="./img/5UKD.gif" style="width: 100%;" >
-            </div>
-            
-        <div id="kupu"  >
-        <img src="./img/kupu.GIF" style="width: 100%;" >
-            </div>
-        <div id="kupu2"  >
-        <img src="./img/kupu.GIF" style="width: 100%;" >
-            </div>
-            <audio id="click"  style="display:none ;">
-                <source src="./click.mp3" type="audio/mpeg" />
-            </audio>
-        <script src="./musik.js"></script>
-        <script src="./js/minified/gsap.min.js"></script>
-        <script>
- var click = document.getElementById('click');
-            function ok() {
-                click.play()
-            }
-            const a = document.querySelector('#loader')
-            const c = document.querySelector('.container')
-            const duck = document.querySelector('#duck')
-            const panda = document.querySelector('#panda')
-            const kupu = document.querySelector('#kupu')
-            const kupu2 = document.querySelector('#kupu2')
-           
-        
-            setTimeout( () => {
-                a.style.display = 'none';
-                duck.style.display = 'block';
-                panda.style.display = 'block';
-                kupu.style.display = 'block';
-                kupu2.style.display = 'block';  
-            },5000)
-                
-   
-gsap.from("#panda", { 
-    y: -500,
-    // rotation: 360,
-  duration: 2,
-  ease: "bounce.out", 
-  delay: 5, 
-  opacity: 0, 
-  });
+          <div id="player-container">
+            <div id="play-pause" class="play">Play</div>
+          </div>
+        </div>
+      </nav>
 
-gsap.from("#main", { 
- scale:0.1,
-    // rotation: 360,
-  duration: 3,
-  ease: "bounce.out", 
-  delay: 5, 
-  opacity: 0, 
-  });
+      <div id="main">
+        <div class="logo-main">
+          <img src="./img/icon1.png" />
+        </div>
+        <div id="title" style="margin-top: -5em">
+          <h1 style="color: #f4f809">Kuis Cerdas Cermat</h1>
+          <!-- <h3 style="margin-top: -3em">Muh. Ainun Yanuarsyam (20562020015)</h3> -->
+        </div>
 
-gsap.from("#kupu", { 
-x:500,
-    // rotation: 360,
-  duration: 3, 
-  delay: 7, 
-  });
-            
+        <a href="./index2.html">
+          <div class="button" style="margin: 0 auto; margin-top: 3em">
+            <img src="./img/mulai.png" />
+          </div>
+        </a>
+      </div>
+      <div id="duck">
+        <img src="./duck1.gif" />
+      </div>
+    </div>
+    <div id="panda" class="panda">
+      <img src="./img/5UKD.gif" style="width: 100%" />
+    </div>
 
-gsap.from("#kupu2", { 
-x:-500,
-    // rotation: 360,
-  duration: 3, 
-  delay: 7, 
-  });
-            
+    <div id="kupu">
+      <img src="./img/kupu.GIF" style="width: 100%" />
+    </div>
+    <div id="kupu2">
+      <img src="./img/kupu.GIF" style="width: 100%" />
+    </div>
+    <audio id="click" style="display: none">
+      <source src="./click.mp3" type="audio/mpeg" />
+    </audio>
+    <script src="./musik.js"></script>
+    <script src="./js/minified/gsap.min.js"></script>
+    <script>
+      var click = document.getElementById("click");
+      function ok() {
+        click.play();
+      }
+      const a = document.querySelector("#loader");
+      const c = document.querySelector(".container");
+      const duck = document.querySelector("#duck");
+      const panda = document.querySelector("#panda");
+      const kupu = document.querySelector("#kupu");
+      const kupu2 = document.querySelector("#kupu2");
 
-          </script>
-	</body>
+      setTimeout(() => {
+        a.style.display = "none";
+        duck.style.display = "block";
+        panda.style.display = "block";
+        kupu.style.display = "block";
+        kupu2.style.display = "block";
+      }, 5000);
+
+      gsap.from("#panda", {
+        y: -500,
+        // rotation: 360,
+        duration: 2,
+        ease: "bounce.out",
+        delay: 5,
+        opacity: 0,
+      });
+
+      gsap.from("#main", {
+        scale: 0.1,
+        // rotation: 360,
+        duration: 3,
+        ease: "bounce.out",
+        delay: 5,
+        opacity: 0,
+      });
+
+      gsap.from("#kupu", {
+        x: 500,
+        // rotation: 360,
+        duration: 3,
+        delay: 7,
+      });
+
+      gsap.from("#kupu2", {
+        x: -500,
+        // rotation: 360,
+        duration: 3,
+        delay: 7,
+      });
+    </script>
+  </body>
 </html>
